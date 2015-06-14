@@ -1,8 +1,8 @@
 <?php
 $host="localhost";
 $user="root";
-$password="wakakaka";
-$database="";
+$password="";
+$database="db_ujianonline";
 
 $koneksi=mysql_connect($host,$user,$password);
 mysql_select_db($database,$koneksi);
