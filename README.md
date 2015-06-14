@@ -1,2 +1,2 @@
-# interprouas2
-Semangat Interpro
+# interprouas
+Ini isi UAS nya :)
