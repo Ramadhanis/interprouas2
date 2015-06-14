@@ -80,7 +80,6 @@ include "koneksi.php";
 
 					<?php
 					if(isset($_SESSION['id_user'])){
-						include "status-login.php";
 					}else{
 						?>
 						<!-- Side Box Begin -->
