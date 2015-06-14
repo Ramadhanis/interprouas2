@@ -111,7 +111,7 @@ include "koneksi.php";
 						<!-- Side Box Begin -->
 						<div class="side-box-top"></div>
 						<div class="side-box-middle">
-						<img src="images/kelompok.png" width="200" height="176" border="0" />
+						<img src="images/bersama.jpg" width="200" height="176" border="0" />
 						<br />
 						<br />
 						</div>
