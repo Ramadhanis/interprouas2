@@ -67,7 +67,7 @@ if(isset($_SESSION['id_user'])){
     
         <p>
         <?php
-		$hasil=mysql_query("select * from tabel_soal where publish='yes'");
+		$hasil=mysql_query("select * from tabel_soal where publish='yes' ORDER BY rand () ");
 		$jumlah=mysql_num_rows($hasil);
 		$urut=0;
 		while($row =mysql_fetch_array($hasil))
