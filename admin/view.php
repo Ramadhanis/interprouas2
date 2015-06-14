@@ -4,10 +4,10 @@ if(isset($_SESSION['id_admin'])){
 ?>
         <h1>Edit Soal</h1>
     
-        <p>
+       <p>
         <?php
-		$query=mysql_query("select * from tabel_soal order by type");
-		echo "<i><marquee>Silahkan masukkan tipe soal yang di inginkan :)</i></marquee>";
+		$query=mysql_query("select * from tabel_soal order by tipe asc");
+		echo "<i>Selamat mengisi soal</i>";
 		?><table width="100%"><?php
 		$no=0;
 		while($row=mysql_fetch_array($query)){

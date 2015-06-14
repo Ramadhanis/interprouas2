@@ -10,7 +10,6 @@ if(isset($_SESSION['id_admin'])){
 		$pilihan_b=ucwords(htmlentities((trim($_POST['pilihan_b']))));
 		$pilihan_c=ucwords(htmlentities((trim($_POST['pilihan_c']))));
 		$pilihan_d=ucwords(htmlentities((trim($_POST['pilihan_d']))));
-		
 		$jawaban=ucwords(htmlentities((trim($_POST['jawaban']))));
 		$publish=htmlentities((trim($_POST['publish'])));
 		$tipe=htmlentities((trim($_POST['tipe'])));

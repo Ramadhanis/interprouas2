@@ -1,4 +1,5 @@
-<div><script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<div>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
 <script type="text/javascript">
  
    $(document).ready(function() {
@@ -8,7 +9,7 @@
        * var jam = 1
        */
        var detik = 0;
-       var menit = 1;
+       var menit = 3;
        var jam = 0;
  
       /**
@@ -30,7 +31,7 @@
 	   *  Menit akan Berkurang 1
 	   */
 	   if(detik < 0) {
-	      detik = 10;
+	      detik = 30;
 	      menit --;
  
 	      /** Jika menit < 0
@@ -43,11 +44,11 @@
  
 		  /** Jika var jam < 0
 		   *  clearInterval() Memberhentikan Interval 
-		   *  Dan Halaman akan membuka http://tahukahkau.com/0
+		   *  
 		   */
 		   if(jam < 0) { 
                       clearInterval();
- 		      window.location = "http://localhost/c/ujian_online/index.php?page=jawaban";
+ 		      window.location = "index.php?page=jawaban";
                    }
 	       }
 	   } 		
@@ -56,6 +57,7 @@
         hitung();
    });
 // ]]></script>
+
 
 </head>
 <body>
@@ -67,7 +69,7 @@ if(isset($_SESSION['id_user'])){
     
         <p>
         <?php
-		$hasil=mysql_query("select * from tabel_soal where publish='yes' ORDER BY rand () ");
+		$hasil=mysql_query("select * from tabel_soal where publish='yes' order by rand()");
 		$jumlah=mysql_num_rows($hasil);
 		$urut=0;
 		while($row =mysql_fetch_array($hasil))
