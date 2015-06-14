@@ -50,7 +50,7 @@ include "koneksi.php";
 					include "./images/index.php";
 					?>
 					<!-- Right Navigation Tab -->
-					<li id="right-tab"><a href="?page=akun"><b>Account</b></a></li>
+					<li id="right-tab"><a href="admin"><b>Login Admin</b></a></li>
 				</ul>
 			</div>
 			<div id="body-middle" class="clearfix">
