@@ -6,7 +6,7 @@ if(isset($_SESSION['id_admin'])){
     
         <p>
         <?php
-		$query=mysql_query("select * from tabel_soal ");
+		$query=mysql_query("select * from tabel_soal order by type");
 		echo "<i>Untuk tipe soal, silahkan teman-teman kembangkan : )</i>";
 		?><table width="100%"><?php
 		$no=0;
