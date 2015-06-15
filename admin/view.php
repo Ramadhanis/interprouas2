@@ -7,7 +7,7 @@ if(isset($_SESSION['id_admin'])){
         <p>
         <?php
 		$query=mysql_query("select * from tabel_soal order by type");
-		echo "<i>Untuk tipe soal, silahkan teman-teman kembangkan : )</i>";
+		echo "<i>Untuk tipe soal, bisa kalian tambahkan sendiri : )</i>";
 		?><table width="100%"><?php
 		$no=0;
 		while($row=mysql_fetch_array($query)){
@@ -43,7 +43,7 @@ if(isset($_SESSION['id_admin'])){
         </p>
 <?php
 }else{
-	?><p>Anda belum login. silahkan <a href="index.php">Login</a></p><?php
+	?><p>Anda belum login. silahkan login terlebih dahulu <a href="index.php">Login</a></p><?php
 }
 ?>
 </div>
